@@ -4,7 +4,7 @@
 define(function () {
     return ['$scope', '$http', function($scope, $http) {
       
-io.sails.url = 'http://localhost:1337';
+io.sails.url = 'behave1.cloudcontrolapp.com';
 socket = io.connect();
 socket.on("employee", function(event){console.log(event);})
 socket.get("/employee/find", function(resData, jwres) {console.log(resData);});

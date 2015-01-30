@@ -24,7 +24,16 @@ module.exports = {
   /***************************************************************************
    * Set the port in the production environment to 80                        *
    ***************************************************************************/
-
+production: {
+        module: 'sails-mysql',
+        host: process.env.MYSQLS_HOSTNAME,
+        user: process.env.MYSQLS_USERNAME,
+        password: process.env.MYSQLS_PASSWORD,
+        database: process.env.MYSQLS_DATABASE,
+        pool: true,
+        connectionLimit: 2,
+        waitForConnections: true
+    }
   // port: 80,
 
   /***************************************************************************
