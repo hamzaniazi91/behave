@@ -1,0 +1,5 @@
+Starting the installation for Cocos2D console
+
+It appears cocos2d console is already installed. If you want to resintall you should
+delete the directory "C:\Users\Hamza/.cocos2d\console" before running the installer again.
+
